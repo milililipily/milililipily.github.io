@@ -1,5 +1,5 @@
-/*{outline: 1px solid blue;
-}*/
+*{outline: 1px solid blue;
+}
 
 body {
 	color:#555555;
@@ -52,18 +52,16 @@ h3{
 }
 .list-nav a:hover{
 	text-decoration: none;
-	color:#B40431;
-	
+	color:#FACC2E;
 	transform: scale(1.2);/*con esto el menu cambia de tamaño*/
 }
-
 
 /*Fin Menú*/
 
 /*Contenido del header*/
 .header{
 	margin-top: 75px;
-	background: url("../images/fondo0.jpg") no-repeat;
+	background: url("../images/fondo.jpg") center no-repeat;
 	background-size: 100% auto;
 	width: 100%;
 	height: 100%
@@ -81,21 +79,50 @@ h3{
 	padding:115px 100px ;/*no es necesaria que le ponga la unidad*/
 	color:#FBFBEF;
 }
-.centro1 h2{
-	color: #A9F5BC;
-	font-family: 'Oswald', Arial, Sans-serif;
-	font-size: 22px;
+
+.centro2{
+	transition: all 0.3s;
+	margin: 0 14px;
+	background: #FFFFFF;
+	opacity: 0.4;
+	border-radius: 50%;
+	
+}
+.centro2:hover{
+	
+	transform: scale(1.1);
+
 }
 .centro2 h2{
-	color: #A9D0F5;
+	color: #000000;
 	font-family: 'Cookie', cursive;
 	font-size: 30px;
 }
-.centro3 h2{
-	color: #F5A9A9;
-	font-family: 
-	'Economica', sans-serif;
+
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
 }
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
 /*perfil*/
 .perfil{
 	margin-top: 40px;
@@ -108,22 +135,23 @@ h3{
 	vertical-align: middle;
 }
 
-.text1{
+.texto1{
 	margin-top: 80px;
 }
-.text1 h3{
+.texto1 h3{
 	margin: 0 auto;
 	font-family: 'Cookie', cursive;
 	font-size: 60px;
-	color:#FF0040;
+	color:#FACC2E;
+
 }
-.text1 h2{
+.texto1 h2{
 	font-family: "Oswald", Arial, Sans-serif;
 	margin-top: 10px;
 	font-size: 20px;
 	color: grey;
 }
-.text1 p{
+.texto1 p{
 	text-align: justify;
 	font-size: 25px;
 	padding: 20px 100px 0 100px;
@@ -143,22 +171,60 @@ h3{
 .portafo ul li{
 	list-style: none;
 	text-decoration: none;
-	background: white;
+	transition: all 0.5s;
+	
 }
 .portafo img{
 
-	padding:10px;
+	padding:05px;
 	width: 100%;
 	height: 220px;
-	background:black; 
+	background:#000000; 
+}
+.portafo img:hover{
+	background: #FACC2E;
+}
+.portafo a:hover{
+	text-decoration: none;
+
 }
 .portafo h4{
-	color:black;
-	margin-bottom: 0;
+	color:#000000;
+	padding-top: 10px;
+	text-decoration: none;
 }
 
-.portafo ul li a:hover;
+.portafo li:hover
 {
-	text-decoration: none;
-	transform: scale(1.2);
+	transform: scale(1.1);
+}
+/*contact*/
+.content-contac{
+	
+	padding: 35px 0 45px 0;
+	background-color: #FFFFFF;
+}
+.content-contact h3{
+	margin: 0 auto;
+	font-family: 'Cookie', cursive;
+	font-size: 60px;
+	color:#FACC2E;
+}
+.letra{
+ font-family: "Oswald", Arial, Sans-serif;
+ font-size: 20px;
+ color:#000000;
+}
+.letra1{
+	color: grey;
+	font-size: 25px;
+	font-family: "Oswald", Arial, Sans-serif;
+}
+.content-contac .msj-form{
+	padding-top: 57px;
+}
+.boton-color {
+    background-color: #FACC2E;
+    color: white;
+    border: 0;
 }
