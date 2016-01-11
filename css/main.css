@@ -78,10 +78,9 @@ h3{
 
 .centro2{
 	transition: all 0.3s;
-	margin: 0 20px;
+	margin: 0 56px;
 	background: #FFFFFF;
 	opacity: 0.4;
-	border-radius: 70%;
 	
 }
 .centro2:hover{
