@@ -257,6 +257,12 @@
 	    </div>
 	</div>
 </div>
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
 <div class="footer text-center">
 	<div class="container">
 		<div class="wrapper">
@@ -281,47 +287,24 @@
 <script src="js/jquery-1.11.3.min.js"></script>
 <script type="js/bootstrap.min.js"></script>
 <script type="js/main.js"></script>
-<script>
-      jQuery(document).ready(function(){
-        $( "#miformulario" ).submit(function( event ) {
-          $('#miformulario').find('.form-group').removeClass('has-error');
-          $('#miformulario').find('.form-group span').text('');
-          var first_name = $('[name=first_name]').val();
-          var last_name = $('[name=last_name]').val();
-          var email = $('[name=email]').val();
-          var message = $('[name=message]').val();
-          if(first_name==""){
-            $('[name=first_name]').closest('.form-group').addClass("has-error");
-            $('[name=first_name]').closest('.form-group').find('span').text("Debe ingresar tus nombres");
-            return false;
-          }
-          if(last_name==""){
-            $('[name=last_name]').closest('.form-group').addClass("has-error");
-            $('[name=last_name]').closest('.form-group').find('span').text("Debe ingresar tus apellidos");
-            return false;
-          }
-          if(email==""){  
-            $('[name=email]').closest('.form-group').addClass('has-error');
-            $('[name=email]').closest('.form-group').find('span').text("debe ingresar una direccion de correo");
-            return false;
-          }else{
-            var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
-            if (testEmail.test(email)){
-              // Do whatever if it passes.
-            }else{
-              $('[name=email]').closest('.form-group').addClass('has-error');
-              $('[name=email]').closest('.form-group').find('span').text("debe ingresar una direccion de correo valida");
-              return false;
-            }
-          }
-          if(message==""){
-            $('[name=message]').closest('.form-group').addClass("has-error");
-            $('[name=message]').closest('.form-group').find('span').text("Debe ingresar mensaje");
-            return false;
-          }
-          //return false;
-        });
-      })
-    </script>
+ <script>
+      window.fbAsyncInit = function() {
+      FB.init({
+      appId      : '206094619736023',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+    };
+
+    (function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+
 </body>
 </html>
