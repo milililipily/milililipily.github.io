@@ -246,36 +246,37 @@ padding: 30px 0;
 	font-size: 17px;
 }
 
-
-
 /*contact****************/
 .content-contact{
-	background: url(../img/background/contactus.jpg);
-	background-size: cover;
-	color: #fff;
+	background: url(../img/background/1.jpg);
+	color: black;
 	position: relative
 }
-
+.content-contact p{
+	font-size: 20px;
+}
 /*footer************/
 .redes .social{
-	margin: 70px 0;
+	margin: 40px 0;
 }
-footer ul li{
+.redes .social ul li{
 	list-style: none;
 	display: inline-block;
 }
-footer ul{
+.redes ul{
 	margin: 0;
 	padding: 0;
 }
-.primes{
+footer p{
+	padding-top: 40px;
+	font-size: 20px;
+}
+footer{
 	background-color: #222222;
 	height: 100px;
 	color: #7D7D7D;
 }
-.primes>p{
-	padding-top: 50px;
-}
+
 .redes .icon{
 	font-size: 41px;
 	color: #323A45;
